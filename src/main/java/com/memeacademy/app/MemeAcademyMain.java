@@ -9,7 +9,28 @@ import com.memeacademy.model.UserService;
 import java.util.*;
 
 public class MemeAcademyMain {
+    public static String getRandomMessage(String[] messages) {
+        return messages[RANDOM.nextInt(messages.length)];
+    }
+    private static final String[] CORRECT_MESSAGES = {
+            "정답입니다! 좀 치는데?",
+            "와 이걸 맞추네ㅋㅋ 인정",
+            "밈 박사 후보생 등장",
+            "감 좋다… 인정한다",
+            "이건 솔직히 잘했다",
+            "알잘딱깔센 인정 👍"
+    };
 
+    private static final String[] WRONG_MESSAGES = {
+            "헛소리하지마 인마!",
+            "이걸 틀리네ㅋㅋ",
+            "밈 압수합니다",
+            "인터넷 끊겼냐?",
+            "이건 좀 킹받네",
+            "다시 태어나자"
+    };
+
+    private static final Random RANDOM = new Random();
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean isQuit = false;
@@ -203,12 +224,11 @@ public class MemeAcademyMain {
             String input = scanner.nextLine().trim();
 
             if (isCorrectAnswer(input, quizItem.getEnableAnswer())) {
-                System.out.println("\n정답입니다!");
-                System.out.println("좀 치는데?");
+                System.out.println("\n" + getRandomMessage(CORRECT_MESSAGES));
                 user.setOneTryScore();
                 user.addSolvedQuiz(quizItem);
             } else {
-                System.out.println("\n헛소리하지마 인마!");
+                System.out.println("\n" + getRandomMessage(WRONG_MESSAGES));
                 System.out.println("힌트(초성) : " + quizItem.getHint());
 
                 System.out.print("\n정답 입력 > ");
