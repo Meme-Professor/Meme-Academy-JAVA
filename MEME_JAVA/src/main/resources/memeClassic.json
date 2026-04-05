@@ -1,0 +1,82 @@
+[
+  {
+    "memeName": "아니 없어요",
+    "enableMemeAnswer": ["아니 그냥 없어요", "아니 없어요"],
+    "question": "여자친구 있어요?",
+    "originUrl": "https://youtu.be/qZtY8Q0AXbQ?si=Up8HCljwo4MYaWjr",
+    "imgUrl": "./images/ClassicMeme/question1.png",
+    "hint": "ㅇㄴ ㅇㅇㅇ"
+  },
+  {
+    "memeName": "빵꾸똥꾸",
+    "enableMemeAnswer": ["죽을래 이 빵꾸똥꾸야", "빵꾸똥꾸", "이 빵꾸똥꾸야"],
+    "question": "이 영상이랑 관련 있는 밈의 이름은?",
+    "originUrl": "https://youtube.com/shorts/ECfy7IoK58s?si=VQzdKPKB49vc9zLu",
+    "imgUrl": "./images/ClassicMeme/question2.png",
+    "hint": "ㅃㄲㄸㄲ"
+  },
+  {
+    "memeName": "궁금하면 500원",
+    "enableMemeAnswer": ["궁금하면 500원", "궁금해요 궁금하면 500원"],
+    "question": "이게 뭐에요?",
+    "originUrl": "https://youtube.com/shorts/uk17k1McGC0?si=Gd0sA4cFBBkWidMN",
+    "imgUrl": "./images/ClassicMeme/question3.png",
+    "hint": "ㄱㄱㅎㅁ 500ㅇ"
+  },
+  {
+    "memeName": "형이 왜 거기서 나와",
+    "enableMemeAnswer": ["형이 왜 거기서 나와"],
+    "question": "이 영상이랑 관련 있는 밈의 이름은?",
+    "originUrl": "https://www.youtube.com/shorts/BD1FOfd-Aag",
+    "imgUrl": "./images/ClassicMeme/question4.jpg",
+    "hint": "ㅎㅇ ㅇ ㄱㄱㅅ ㄴㅇ"
+  },
+  {
+    "memeName": "상상도 못한 정체",
+    "enableMemeAnswer": ["상상도 못한 정체"],
+    "question": "이 영상이랑 관련 있는 밈의 이름은?",
+    "originUrl": "https://www.youtube.com/watch?v=Kl-gqgWBtYk",
+    "imgUrl": "./images/ClassicMeme/question5.png",
+    "hint": "ㅅㅅㄷ ㅁㅎ ㅈㅊ"
+  },
+  {
+    "memeName": "OTL",
+    "enableMemeAnswer": ["오티엘", "OTL"],
+    "question": "이 영상이랑 관련 있는 밈의 이름은?",
+    "originUrl": "https://namu.wiki/w/OTL",
+    "imgUrl": "./images/ClassicMeme/question6.png",
+    "hint": "ㅇㅌㅇ"
+  },
+  {
+    "memeName": "완소",
+    "enableMemeAnswer": ["완소"],
+    "question": "이 사진이랑 관련있는 밈의 이름은?",
+    "originUrl": "https://namu.wiki/w/%EC%99%84%EC%86%8C",
+    "imgUrl": "./images/ClassicMeme/question7.jpg",
+    "hint": "ㅇㅅ"
+  },
+  {
+    "memeName": "킹왕짱",
+    "enableMemeAnswer": ["킹왕짱"],
+    "question": "이 사진이랑 관련있는 밈의 이름은?",
+    "originUrl": "https://namu.wiki/w/%ED%82%B9%EC%99%95%EC%A7%B1",
+    "imgUrl": "./images/ClassicMeme/question8.png",
+    "hint": "ㅋㅇㅉ"
+  },
+  {
+    "memeName": "난 가끔 눈물을 흘린다",
+    "enableMemeAnswer": ["난 가끔 눈물을 흘린다"],
+    "question": "이 사진이랑 관련있는 밈의 이름은?",
+    "originUrl": "https://namu.wiki/w/%EC%B1%84%EC%97%B0?from=%EB%82%9C%20%EA%B0%80%EB%81%94%20%EB%88%88%EB%AC%BC%EC%9D%84%20%ED%9D%98%EB%A6%B0%EB%8B%A4#s-8",
+    "imgUrl": "./images/ClassicMeme/question9.png",
+    "hint": "ㄴ ㄱㄲ ㄴㅁㅇ ㅎㄹㄷ"
+  },
+  {
+    "memeName": "심쿵",
+    "enableMemeAnswer": ["심쿵"],
+    "question": "이 사진이랑 관련있는 밈의 이름은?",
+    "originUrl": "https://namu.wiki/w/%EC%8B%AC%EC%BF%B5",
+    "imgUrl": "./images/ClassicMeme/question10.png",
+    "hint": "ㅅㅋ"
+  }
+]
