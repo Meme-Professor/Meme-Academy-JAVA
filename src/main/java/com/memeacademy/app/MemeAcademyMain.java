@@ -80,7 +80,7 @@ public class MemeAcademyMain {
                 System.out.println();
                 System.out.println("[입학하기]");
                 System.out.println("닉네임과 밈 코스를 선택하는 화면으로 이동합니다.");
-                User user = createUser(scanner);
+                User user = createUser(scanner, userService);
                 showUserStartScreen(user, userService, scanner);
                 break;
 
@@ -110,30 +110,44 @@ public class MemeAcademyMain {
         return false;
     }
 
-    public static User createUser(Scanner scanner) {
+    public static User createUser(Scanner scanner, UserService userService) {
         System.out.println();
         System.out.println("================================================");
         System.out.println("                  입학 신청서");
         System.out.println("================================================");
 
-        String nickname = inputUserName(scanner);
+        String nickname = inputUserName(scanner, userService);
         String category = inputMemeCategory(scanner);
 
         return new User(nickname, category);
     }
 
-    public static String inputUserName(Scanner scanner) {
+    public static String inputUserName(Scanner scanner, UserService userService) {
         System.out.print("유저 이름을 입력하세요 > ");
-        String userName = scanner.nextLine();
+        String userName = scanner.nextLine().trim();
 
-        while(userName.length() < 2 || userName.length() > 12) {
+        while(true) {
+            boolean check = false;
 
-            if (userName.isEmpty()) {
+            if (userService.getUsers() != null) {
+                for (User user : userService.getUsers()) {
+                    if (user.getUserName().equals(userName)) {
+                        check = true;
+                        break;
+                    }
+                }
+            }
+
+            if (check) {
+                System.out.println("이미 사용 중인 유저 네임입니다.");
+            } else if (userName.isEmpty()) {
                 System.out.println("유저 이름은 공백으로 둘 수 없습니다.");
-            }
-            if (!userName.isEmpty() && (userName.length() < 2 || userName.length() > 12)) {
+            } else if (userName.length() < 2 || userName.length() > 12) {
                 System.out.println("유저 이름은 2자 이상 12자 이하로 입력되어야 합니다.");
+            } else {
+                break;
             }
+
             System.out.println();
             System.out.print("유저 이름을 입력하세요 > ");
             userName = scanner.nextLine().trim();
