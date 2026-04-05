@@ -83,7 +83,7 @@ public class Meme2025 {
                 "<상황>\n난 이 OO을 해봤어요!!!!\n",
                 new String[]{"게임"},
                 "https://www.youtube.com/watch?v=S8cFPsMEr94",
-                "ㄱㅇㅇ"
+                "ㄱㅇ"
         ));
     }
     public ArrayList<QuizItem> getMemes2025() {
