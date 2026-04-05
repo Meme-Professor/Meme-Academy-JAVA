@@ -10,7 +10,7 @@ public class Meme2025 {
     public Meme2025() {
         this.memes2025.add(new QuizItem(
                 "2025Meme1",
-                "<설명>\n브레인 롯에서 야구 방망이를 들고 있은 갈색 나무토막 브레인 롯 캐릭터 이름은?\n",
+                "<설명>\n이탈리안 브레인 롯에서 야구 방망이를 들고 있은 갈색 나무토막 브레인 롯 캐릭터 이름은?\n",
                 new String[]{"퉁퉁퉁 사후르",
                         "퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 퉁 사후르",
                         "퉁 퉁 퉁 사후르",
@@ -80,8 +80,8 @@ public class Meme2025 {
         ));
         this.memes2025.add(new QuizItem(
                 "2025Meme10",
-                "<상황>\n난 이 OOO 해봤어요!!!!\n",
-                new String[]{"게임을"},
+                "<상황>\n난 이 OO을 해봤어요!!!!\n",
+                new String[]{"게임"},
                 "https://www.youtube.com/watch?v=S8cFPsMEr94",
                 "ㄱㅇㅇ"
         ));
